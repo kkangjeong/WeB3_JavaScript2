@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 별찍기 </title>
+    <script>
+        /*
+        1)
+        *
+        * *
+        * * *
+        * * * *
+        * * * * *
+
+
+        for(var i =0; i<5; i++){
+            document.write("*".repeat(i+1) +"<br/>");
+        }
+
+
+        2)
+        *****
+        ****
+        ***
+        **
+        *
+
+
+        for(var i=5; i>=1; i--){
+            document.write("*".repeat(i) + "<br>");
+        }
+
+
+        3)
+        **********
+        ********
+        ******
+        ****
+        **
+
+
+
+        for(var i =10; i>=2; i -= 2){
+            document.write("*".repeat(i) + "<br>");
+        }
+
+
+
+        4)
+        *
+        **
+        ****
+        ********
+        ****************
+
+
+
+        for(var i =1; i<=16; i = i*2)
+            document.write("*".repeat(i) + "<br>");
+
+
+        5) 공백이 앞에 있는 !
+
+        *****
+         ****
+          ***
+           **
+            *
+
+
+
+        for(var i =5; i>=1; i -= 1)
+            document.write("&nbsp;".repeat(5-i) +"*".repeat(i) + "<br>");
+        // console창에서는 " ".repeat(5-i) 되는데 html 상에서는 안되서 &nbsp; 사용
+
+
+        6)
+
+        *********
+         *******
+          *****
+           ***
+            *
+
+
+
+
+        //답
+        for(var i=9; i>=1; i -=2){
+            document.write("&nbsp;".repeat((9-i) /2) + "*".repeat(i)+"<br />");
+        }
+
+        */
+
+
+        /*
+        7)
+          *
+         ***
+        *****
+         ***
+          *
+
+         */
+
+        //다시
+        for(var i=5; i>=1; i -=2)
+            document.write("&nbsp;".repeat((5-i) /2) + "*".repeat(i)+"<br />");
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 끝말잇기 </title>
+    <script>
+        // 끝말잇기 프로그램
+        var word = "자전거";
+
+        while (true) {
+            var next = prompt(word + " 다음 단어를 입력하라");
+            if (word[word.length - 1] === next[0]) {
+                word = next;
+                //next = "";
+                //continue;
+            }
+            else
+                alert("다시 입력하세요");
+        }
+
+
+        //for로 바꿔보기
+
+
+        for(var word = "자전거"; true; ){    //무한반복 방법 다시
+            var next = prompt(word + " 다음 단어 입력하라");
+            if (word[word.length - 1] === next[0]) {
+                word = next;
+                next = "";
+            }
+            else
+                alert("다시 입력하세요");
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
