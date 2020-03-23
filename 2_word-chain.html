@@ -10,9 +10,10 @@
         while (true) {
             var next = prompt(word + " 다음 단어를 입력하라");
             if (word[word.length - 1] === next[0]) {
+                //무한루프 가야하니까 1. 두 변수 초기화*
                 word = next;
-                //next = "";
-                //continue;
+                next = "";
+                //continue;     //2. 무한루프
             }
             else
                 alert("다시 입력하세요");

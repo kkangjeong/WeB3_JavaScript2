@@ -4,24 +4,26 @@
     <meta charset="utf-8">
     <title></title>
     <script>
-        while(true) {
-
             var su1 = Math.floor(Math.random() * 9) + 1;
             var su2 = Math.floor(Math.random() * 9) + 1;
 
             var result = su1 * su2;
 
             while (1) {
+                //1. 초기화
                 var user = prompt(su1 + " * " + su2 + "= " + "?");
 
                 if (result === parseInt(user)) {
                     alert(result + " 딩동댕");
-                    break;
+                    // 2. 무한루프가기
+                    su1 = Math.floor(Math.random() * 9) + 1;
+                    su2 = Math.floor(Math.random() * 9) + 1;
+
+                    result = su1 * su2;
+
                 } else
                     alert("땡 다시입력하라");
-                    continue;
             }
-        }
     </script>
 </head>
 <body>
