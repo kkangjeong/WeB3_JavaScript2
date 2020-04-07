@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e0bd67-3f84-40fa-9c4f-d447ca291dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5_wordchain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_gugudan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_gugudan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7_bulls-and-cows.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7_bulls-and-cows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8_tictacto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8_tictacto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_rock-paper-scissors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_rock-paper-scissors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_Minesweeper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_Minesweeper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lotto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lotto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_word-chain.html" beforeDir="false" afterPath="$PROJECT_DIR$/2_word-chain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_gugudan.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_gugudan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_wordchain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_wordchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/5_wordchain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bulls-and-cows.js" beforeDir="false" afterPath="$PROJECT_DIR$/7_bulls-and-cows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_tictacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_tictacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +34,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZFLPtbe2zxW43mQ7XbcWyoExXW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -37,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wjddl\Desktop\WeB3_JavaScript2" />
       <recent name="C:\Users\user\Desktop\Web3" />
     </key>
   </component>
@@ -62,21 +77,54 @@
       <workItem from="1584805110836" duration="6898000" />
       <workItem from="1584927239948" duration="14932000" />
       <workItem from="1584947235989" duration="23564000" />
+      <workItem from="1584983347762" duration="431000" />
+      <workItem from="1585015929812" duration="13764000" />
+      <workItem from="1585042325001" duration="8704000" />
+      <workItem from="1585106336021" duration="21217000" />
+      <workItem from="1585193915927" duration="754000" />
+      <workItem from="1585195041560" duration="56000" />
+      <workItem from="1585227712964" duration="185000" />
+      <workItem from="1585227908162" duration="18000" />
+      <workItem from="1585227927527" duration="19000" />
+      <workItem from="1585411956302" duration="57000" />
+      <workItem from="1585530622707" duration="17445000" />
+      <workItem from="1585617623976" duration="24624000" />
+      <workItem from="1585706917822" duration="8154000" />
+      <workItem from="1585741629231" duration="13296000" />
+      <workItem from="1585799326376" duration="11991000" />
+      <workItem from="1585829344519" duration="2766000" />
+      <workItem from="1585877294823" duration="5578000" />
+      <workItem from="1585931538284" duration="1530000" />
+      <workItem from="1585969253567" duration="16828000" />
+      <workItem from="1586146597143" duration="3448000" />
+      <workItem from="1586150517794" duration="16162000" />
+      <workItem from="1586221576135" duration="18324000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="818" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584938876218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584938876218" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1585227945356">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585227945356" />
     <state x="193" y="98" key="SettingsEditor" timestamp="1584679259579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="193" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584679259579" />
+    <state x="1012" y="240" key="run.anything.popup" timestamp="1585540636755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1012" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585540636755" />
     <state x="1019" y="183" width="840" height="1034" key="search.everywhere.popup" timestamp="1584970751324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,3 +1,5 @@
+// 10회 제한, "1234"  [1234]  "1, 2, 3, 4"(쉽표까지 스트링)  3개 데이터 다루는 법
+
 var body = document.body;
 
 var divTag = document.createElement("div");
@@ -9,7 +11,7 @@ document.body.append(inputTag);
 
 var buttonTag = document.createElement("button");
 document.body.append(buttonTag);
-buttonTag.textContent = "확인"
+buttonTag.textContent = "확인";
 
 var strikeCountTag = document.createElement("h1");
 document.body.append(strikeCountTag);
@@ -47,34 +49,33 @@ buttonTag.addEventListener("click", function () {
     //.join()   : 배열을 문자로
 
     //한방에 맞으면
-    //join 이용해서 배열을 문자로
+    //join 이용해서 배열을 문자열로
     if (inputTag.value === number4digits.join("")) {
         document.write("홈런");
 
         //2. 무한루프
         randomnumber();
+        count = 0;
 
     } else {
         //2) 더 나은 코드
+        var changeinputTag = (inputTag.value).split('');
+
         var strikeCount = 0;
         var ballCount = 0;
 
         count++;
-        if(count >10){
+        if (count > 10) {
             strikeCountTag.textContent = "10번 넘게 틀려서 실패ㅠ 답은 : " + number4digits.join(' ,');
-            ballCountTag.textContent = "";
+            ballCountTag.textContent = "";      //출력안되게 하려고
             randomnumber();
             count = 0;
-        }
-
-        else {
+        } else {
             //split 이용해서 문자를 배열로
-            var changeinputTag = (inputTag.value).split('');
-
             for (var i = 0; i < 4; i++) {
                 if (parseInt(changeinputTag[i]) === number4digits[i]) {
                     strikeCount++;
-                } else if (number4digits.indexOf(parseInt(changeinputTag[i]) > -1)) {	//indexOf : 값위치 리턴//없으면 -1//같은자리인지 확인은 바로 위 if문에서 걸렀으니까
+                } else if (number4digits.indexOf(parseInt(changeinputTag[i])) > -1) {	//indexOf : 값위치 리턴//없으면 -1//같은자리인지 확인은 바로 위 if문에서 걸렀으니까
                     ballCount++;
                 }
             }
@@ -83,6 +84,7 @@ buttonTag.addEventListener("click", function () {
         }
     }
 
+});
 
         /*
         // 1) 내가 짠 코드
@@ -111,4 +113,3 @@ buttonTag.addEventListener("click", function () {
         ballCountTag.textContent = ballCount + "B";
 
         */
-});

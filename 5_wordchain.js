@@ -15,8 +15,6 @@ buttonTag.textContent = "입력";
 var divTag2 = document.createElement("div");
 document.body.append(divTag2);
 
-
-
 buttonTag.addEventListener('click', function () {
 
     if (divTag.textContent[divTag.textContent.length - 1] === inputTag.value[0]) {
@@ -55,8 +53,6 @@ buttonTag.textContent = "입력";
 
 var divTag2 = document.createElement("div");
 document.body.append(divTag2);
-
-
 
 formTag.addEventListener('submit', function (e) {
     e.preventDefault();         //기본동작인 새로고침 안되도록(submit일 때)
