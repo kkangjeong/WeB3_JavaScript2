@@ -1,0 +1,154 @@
+1)
+
+var x = "global";
+
+function ex(){
+    var x = "local";
+    x = "change";
+}
+
+ex();
+window.alert(x);                // global 출력 (ex함수 끝나면 없어지니까 그냥 아예 무시되었다고 생각하기)
+
+
+
+
+
+2)
+var x = "global";
+
+function ex(){
+    x = "local";                // var로 선언되지 않아서 상위로 올라간다(global-> local -> change로)
+    x = "change";
+}
+
+ex();
+window.alert(x);                // change 출력
+
+
+
+
+
+3)
+var name = "zero";
+
+function outer(){
+    console.log("외부", name);        // var name 없으니까 상위로 올라가서 찾으니까 -> 외부 zero
+    function inner(){
+        var enemy = "nero";
+        console.log("내부", name);    // var name 없으니까 상위로 근데 없으니까 또 상위로 -> 내부 zero
+    }
+    inner();
+}
+outer();
+console.log(enemy);         //에러
+
+
+
+
+
+4)
+var name = "zero";
+function log(){
+    console.log(name);      //nero
+}
+function wrapper(){
+    name = "nero";
+    log();
+}
+wrapper();
+
+
+
+
+5) 4를 바꾸면
+var name = "zero";
+function log(){
+    console.log(name);      //zero 구나
+}
+function wrapper(){
+    var name = "nero";      //무슨 값이던지 위랑은 상관이 없는 것이다
+    log();
+}
+wrapper();
+
+
+
+
+
+1) 클로저로 해결 가능한 문제 (반복문 + 비동기 함수(setTimeout) 만날 때 문제 주로 발생*)
+
+for(var i = 0; i < 100; i++){
+    setTimeout(->function () {
+        console.log(i);         //비동기 안에 있는 함수 안의 변수!(i)는 실행될 때(0,1,...,99초 뒤에 실행되니까 그 때 i를 찾기 시작한다 근데
+    }<-, i * 1000);                                 그 i값이 계산이 빨리되서 100인 것) 값이 결정되기 때문에 아직 실행안되서 i 가 안바뀌고 계속 100인 것
+}
+
+// 100이 99번 출력된다ㅠㅠ 우리가 원하는 건 0부터 99까지 출력이 시간 차 두고! 100번 되는 것
+
+//function 화살표 부분도 하나의 스코프인데 변수 var i 없으니까 상위(전역범위)의 i 의미
+//i * 1000의 i는 전역범위에 있는 i 의미
+
+
+// 그러니까
+setTimeout(function () {
+        console.log(i);
+    }, 0 * 1000);           //더 딥한 내용 : 0초인데 반복문이 더 느린데 얘는 왜 100인가???(나중에 이벤트루프)
+
+setTimeout(function () {
+        console.log(i);
+    }, 1 * 1000);
+
+setTimeout(function () {
+        console.log(i);
+    }, 2 * 1000);
+
+setTimeout(function () {
+        console.log(i);
+    }, 3 * 1000);
+
+setTimeout(function () {
+        console.log(i);
+    }, 4 * 1000);
+
+... 99 * 1000 까지 있는거라서 i 가 다 100인 것
+
+
+
+
+
+-> 클로저로 해결하면
+
+
+for(var i = 0; i < 100; i++){
+    function c1(j){
+         setTimeout(function () {
+                console.log(j);
+            }, j * 1000);
+    }
+    cl(i);
+}
+
+
+//그러니까
+
++) function c1(j){} 이고 (c1(0)호출하면 )는 function c1(){ var j = 0; } 과 같아서 var j
+
+
+
+function c1(j){                      // 1. j가 0
+         setTimeout(function () {
+                console.log(j);         //3. j가 0(var j가 없으니까 상위 function c1(j)의 j 값을 똑같이 갖을 수 있는 것(근데 var 안붙였는데 -> +)내용 참고))
+            }, j * 1000);               //2. j가 0
+    }
+    cl(0);
+
+function c1(j){
+         setTimeout(function () {
+                console.log(j);
+            }, j * 1000);
+    }
+    cl(1);
+
+
+...c1(99)까지 니까

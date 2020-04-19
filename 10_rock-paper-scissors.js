@@ -1,16 +1,16 @@
-var computer = '0';
 var dictionary = {
     바위: '0',
     가위: '-200px',
     보: '-400px'
 };
+
 function computerChoose(computer) {
-// 2방법) 객체를 배열로 바꾸는 법 : Object.entries(dictionary); -> 2차원 배열이 되는 거네
+// 2방법) 객체를 배열로 바꾸는 법 : Object.entries(dictionary);
 // 1차원 배열일 때는 indexof , 2차원 배열일 때는 find랑 findindex
     return Object.entries(dictionary).find(function (v) {
         return v[1] === computer;
     })[0];
-// 배열.find는 반복문이지만 원하는 것을 찾으면 멈춘다(return true)
+// 배열.find는 반복문이지만 원하는 것을 찾으면 멈춘다
 
 }
 // 1방법) dictionary 단점
@@ -22,6 +22,8 @@ function computerChoose(computer) {
 
 
 var interval;
+
+var computer = '0';
 
 function intervalMaker() {
     interval = setInterval(function () {
@@ -53,7 +55,7 @@ document.querySelectorAll('.btn').forEach(function (btn) {
         }, 2000);
         var me = this.textContent;
         // 2번)
-        h2[0].innerHTML = "나 : " + this.textContent + "<br />" + "컴퓨터 : " + computerChoose(computer);
+        h2[0].innerHTML = "컴퓨터 : " + computerChoose(computer) + "<br />" + "나 : " + this.textContent;
         // 1번) document.write(this.textContent, dictionary2[computer]);
 
         var score = {
@@ -65,8 +67,8 @@ document.querySelectorAll('.btn').forEach(function (btn) {
             h2[1].textContent = "무승부입니다";
         }else if([-1, 2].includes(score[me] - score[computerChoose(computer)]))
             // 또는 일 때 배열.includes
-            h2[1].textContent = "이겼습니다";
+            h2[1].textContent = "졌습니다";
         else{
-            h2[1].textContent = "졌습니다";        }
+            h2[1].textContent = "이겼습니다";        }
     });
 });

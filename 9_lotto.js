@@ -1,10 +1,11 @@
 // 당첨숫자를 (숫자야구처럼) 맞춰서 등수 매기는 것도 응용해보기
 
 // Array(숫자)로 빈 배열을 만들 수 있다 // 각각 출력할 때-> 반복문 불가
-//var numberCandidate = Array(45);    //45개 일일이 배열 나열하기 귀찮으니까 array함수 사용//이거는 자주쓰지는 않고 []대괄호로 주로 한다
-//윗줄은 공간만 만든 것
+// var numberCandidate = Array(45);    //45개 일일이 배열 나열하기 귀찮으니까 array함수 사용//이거는 자주쓰지는 않고 []대괄호로 주로 한다
+// 윗줄은 공간만 만든 것
 
-//var fill = numberCandidate.fill();
+// 참고로 자바스크립트는 배열의 길이를 미리 정할 필요가 없다
+// var fill = numberCandidate.fill();
 
 // 2) 별로 (forEach로)
 // 인덱스를 두번째 매개변수에 넣으면 사용가능
@@ -39,20 +40,46 @@ console.log("당첨숫자들", winningNumbers.sort(function (p, c) {return p-c;}
 //sort에다가 함수넣으면 우리가 생각하는 숫자 소트된다 // c - p이면 내림차순 //0보다 크면 자리를 바꿔서
 
 /*
+// 1초에 한개씩 공 보여주도록 (비동기)
+// 클로저로 해결이 가능한 문제(반복문 + 비동기 함수(setTimeout) 만날 때)
+
 for(var i = 0; i < winningNumbers.length; i++){
-    //1초에 한개씩 공 보여주도록 (비동기)
-    // 클로저에 관한 문제(반복문 안에 비동기 사용할 때)
-    setTimeout(function () {
-        var ball = document.createElement("div");
-        ball.textContent = winningNumbers[i];
-        result.appendChild(ball);
-    },1000);
+    setTimeout(->function () {
+        coloringball(winningNumbers[i], result);
+    }<-, (i + 1) * 1000);
 }
+//function 화살표 부분도 하나의 스코프인데 변수 var i 없으니까 상위(전역범위)의 i 의미
+//i * 1000의 i는 전역범위에 있는 i 의미
+
+
+클로저로 문제 해결하면
+
+for(var i = 0; i < winningNumbers.length; i++){
+    function c1(j){
+        setTimeout(function () {
+            coloringball(winningNumbers[j], result);
+        }, (j + 1) * 1000);
+    }
+    c1(i);
+}
+
+코드 간소화하면
+
+for(var i = 0; i < winningNumbers.length; i++){
+    (function c1(j){
+        setTimeout(function () {
+            coloringball(winningNumbers[j], result);
+        }, (j + 1) * 1000);
+    })(i);
+}
+
+
+
 */
 
 // html태그를 자바스크립트로 가져오는 방법
 var result = document.getElementById("result");
-//var result = document.querySelector("#result");
+// var result = document.querySelector("#result");
 
 
 function coloringball(n, result){
