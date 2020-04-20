@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e0bd67-3f84-40fa-9c4f-d447ca291dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/11_scope&amp;closure.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_responsiveSpeedGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_responsiveSpeedGame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_cardmatchingGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_cardmatchingGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_rock-paper-scissors.js" beforeDir="false" afterPath="$PROJECT_DIR$/10_rock-paper-scissors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_Minesweeper.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_Minesweeper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/11_Minesweeper.js" beforeDir="false" afterPath="$PROJECT_DIR$/11_Minesweeper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_tictacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8_tictacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_lotto.js" beforeDir="false" afterPath="$PROJECT_DIR$/9_lotto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice4.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice4.js" beforeDir="false" afterPath="$PROJECT_DIR$/practice4.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,10 @@
       <workItem from="1587096182198" duration="7304000" />
       <workItem from="1587107223806" duration="5264000" />
       <workItem from="1587259270135" duration="14808000" />
-      <workItem from="1587291740999" duration="7264000" />
+      <workItem from="1587291740999" duration="19275000" />
+      <workItem from="1587346282839" duration="14560000" />
+      <workItem from="1587370840023" duration="5744000" />
+      <workItem from="1587384818609" duration="2304000" />
     </task>
     <servers />
   </component>

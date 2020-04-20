@@ -85,7 +85,7 @@ document.querySelector("#exec").addEventListener("click", function(){
                     e.currentTarget.classList.add("question");
 
                     //dataset[sero][garo] = "?";
-                    if(dataset[sero][garo] === codeTa.ble.flagX){
+                    if(dataset[sero][garo] === codeTable.flagX){
                         dataset[sero][garo] = codeTable.questionX;
                     }else{
                         dataset[sero][garo] = codeTable.question;
@@ -115,12 +115,12 @@ document.querySelector("#exec").addEventListener("click", function(){
                 var garo = Array.prototype.indexOf.call(ancestorTr.children, e.currentTarget);
                 var sero = Array.prototype.indexOf.call(ancestorTbody.children, ancestorTr);
 
-                // 칸이 열렸을 때(모든 칸 클릭해서 성공 출력되어야 하는데 카운트 변수가 여러번 카운트되는 것 방지하는 것)
-                if([codeTable.opened, codeTable.flag, codeTable.flagX, codeTable.questionX, codeTable.question].includes(dataset[sero][garo])){
+                if([codeTable.opened, codeTable.question, codeTable.flag, codeTable.flagX, codeTable.questionX].includes(dataset[sero][garo])){
                     return;
                 }
                 e.currentTarget.classList.add("opened");    //태그.classList는 (td)태그의 클레스에 접근// add : 추가(opend라는 클래스 추가)//remove: 삭제
                 openCount += 1;
+
                 if(dataset[sero][garo] === codeTable.X){
                     e.currentTarget.textContent = "펑!";
                     document.querySelector("#result").textContent = "!!실패!!";
