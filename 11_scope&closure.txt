@@ -67,7 +67,7 @@ function log(){
     console.log(name);      //zero 구나
 }
 function wrapper(){
-    var name = "nero";      //무슨 값이던지 위랑은 상관이 없는 것이다
+    var name = "nero";      //무슨 값이던지 위랑은 상관이 없는 것이다 // wrapper()함수 끝나면 nero 없어진다고 생각하면 e
     log();
 }
 wrapper();

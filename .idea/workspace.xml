@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e0bd67-3f84-40fa-9c4f-d447ca291dc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12_responsiveSpeedGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_responsiveSpeedGame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_cardmatchingGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_cardmatchingGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_Minesweeper.js" beforeDir="false" afterPath="$PROJECT_DIR$/11_Minesweeper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_tictacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_tictacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/8_tictacto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_scope&amp;closure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/11_scope&amp;closure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_cardmatchingGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_cardmatchingGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_cardmatchingGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/13_cardmatchingGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,10 @@
       <workItem from="1587291740999" duration="19275000" />
       <workItem from="1587346282839" duration="14560000" />
       <workItem from="1587370840023" duration="5744000" />
-      <workItem from="1587384818609" duration="2304000" />
+      <workItem from="1587384818609" duration="6316000" />
+      <workItem from="1587436529003" duration="8299000" />
+      <workItem from="1587526702251" duration="18600000" />
+      <workItem from="1587554117170" duration="4615000" />
     </task>
     <servers />
   </component>
@@ -122,10 +121,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="193" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587096236808" />
-    <state x="1012" y="240" key="run.anything.popup" timestamp="1585540636755">
+    <state x="774" y="33" width="719" height="990" key="find.popup" timestamp="1587530630181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1012" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585540636755" />
+    <state x="774" y="33" width="719" height="990" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587530630181" />
+    <state x="1012" y="240" key="run.anything.popup" timestamp="1587437863573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1012" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587437863573" />
     <state x="1019" y="183" width="840" height="1034" key="search.everywhere.popup" timestamp="1586264026143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
