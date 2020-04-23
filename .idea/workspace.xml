@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e0bd67-3f84-40fa-9c4f-d447ca291dc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/13_reference&amp;copy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_scope&amp;closure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/11_scope&amp;closure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13_cardmatchingGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_cardmatchingGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/13_cardmatchingGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/13_cardmatchingGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +98,8 @@
       <workItem from="1587436529003" duration="8299000" />
       <workItem from="1587526702251" duration="18600000" />
       <workItem from="1587554117170" duration="4615000" />
+      <workItem from="1587566692343" duration="261000" />
+      <workItem from="1587610708020" duration="6423000" />
     </task>
     <servers />
   </component>
@@ -113,6 +114,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584938876218" />
+    <state x="635" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587624648194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="635" y="303" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587624648194" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1585227945356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

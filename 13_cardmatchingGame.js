@@ -1,35 +1,67 @@
 var garo = 4;
 var sero = 3;
 var colors = ["red", "red", "orange", "orange", "green", "green", "yellow", "yellow", "white", "white", "pink", "pink"];
-var colorCandidate = colors.slice();    // 백업을 해놓는 것 // .slice()는 참조관계를 끊는 것
+var colorCandidate = colors.slice();    // 백업을 해놓는 것 // .slice()는 참조관계(똑같이 바뀌는 것) 안되도록 끊는 것
 
-// 참조란? 객체, 배열, 함수는 (문자, 숫자, 불린(3개는 원시값)과 달리) 복사하면 복사당한 것과 똑같이 바뀐다
+
+// 문자, 숫자, 불린(3개는 원시값)  : 참조가 안되서 = 을 붙이면 복사(다른 대상이 만들어지는) // 똑같이 바뀌지 않는다
+// 객체, 배열, 함수  : = 을 붙이면 참조 //똑같이 바뀐다 // 바뀌지 않도록 복사!하는 것
+
+// 얕은 복사 = 복사
+// 깊은 복사 = 복사
+
 // 1. 객체의 참조
+// var person = {
+//     name : "정인";
+// }
+// var copyperson = person;
+//
+// copyperson.name = "강정";
+
+// console.log(person);        // "정인"이 아니라 "강정"으로 된다(똑같이 바뀐다)
+
+
+// +) 원시값(문자)의 복사
+
 // var value = "정인";
 // var copy = value;
 // copy = "강정";
 // console.log(value); // 결과 : 정인 // 이게 일반적이지
-// 그런데 객체, 배열, 함수는 copy를 바꿨는데 value도 바뀐다(원시값은 참조가 안된다)
+// 그런데 객체, 배열, 함수는 copy를 바꿨는데 value도 바뀐다
 
-// 2. 객체의 (참조가 아니라) 복사
-// 1) 하나하나 넣는 무식한 방법
-    var obj = {a : 1, b : 2};
-    // var obj2 = obj;  // 이거는 참조
-    var obj2 = {};
-    obj2.a = obj.a;
-// 2)
+// 2. 객체의 복사
+// 1) 빈 객체 만든 후 하나하나 넣는 무식한 방법(객체안의 속성이 많다면 일일이 번거롭다)
+//     var obj = {a : 1, b : 2};
+//     // var obj2 = obj;  // 이거는 객체의 참조니까 똑같이 안 변하도록 복사를 하고 싶다
+//     var obj2 = {};
+//     obj2.a = obj.a;     // wow obj.a는 원시값이니까 복사가 가능한 것
+//     obj2.b = obj.b;
+//
+//     obj2.a = 3;
+//     console.log(obj.a);  //  1
+
+// 2) Object.keys(obj).forEach (속성 안에 속성이 있다면 단점 발생)
 //  var obj = {a : 1, b : 2, c : 3};
 //  Object.keys(obj);
 //  var obj2 = {};
-//  Object.keys(obj).forEach(function(key){
-//      obj2[key] = obj[key];
+//  Object.keys(obj).forEach(function(key){         // Object.keys는 객체의 속성명들을 배열로 바꾼다 : ["a", "b", "c"]
+//      obj2[key] = obj[key];   // 속성 개수에 상관없이 *객체를 복사한 것
 //  });
+// obj2.a = 4;
+// console.log(obj.a);      // 그대로 1이다
 
+// 참조관계인지 아닌지 파악하는 방법
+var obj = {a : 1, b : 2, c : 3};
+var obj2 = obj;     // 객체니까 참조
+console.log(obj === obj2);      //true -> 참조관계이다(연결되어 있다는 뜻)
 
-// 문자, 숫자, 불린  : 참조가 안되서 = 을 붙이면 복사 // 똑같이 바뀌지 않는다
-// 객체, 배열, 함수  : =을 붙이면 참조 //똑같이 바뀐다
-                        //바뀌지 않도록 복사!
+// +)
+var obj = {a : 1, b : 2, c : 3};
+var obj2 = {a : 1, b : 2, c : 3};
 
+obj === obj2  //false
+obj2 = obj // 하면
+obj === obj2  //true
 
 
 var cardColor = [];
